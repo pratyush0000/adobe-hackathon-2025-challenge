@@ -1,52 +1,50 @@
-import fitz  # PyMuPDF
+import os
 import json
 from pathlib import Path
+import pdfplumber
+
 
 def extract_headings_from_pdf(pdf_path):
-    import fitz
-    doc = fitz.open(pdf_path)
-    outline = []
+    headings = []
     seen = set()
 
-    for page_num, page in enumerate(doc, start=1):
-        blocks = page.get_text("dict")["blocks"]
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_num, page in enumerate(pdf.pages, start=1):
+            words = page.extract_words(use_text_flow=True, keep_blank_chars=False)
 
-        for block in blocks:
-            for line in block.get("lines", []):
-                spans = line.get("spans", [])
-                if not spans:
+            for word in words:
+                text = word["text"].strip()
+
+                if len(text) < 4:
                     continue
-
-                text = " ".join(span["text"].strip() for span in spans if span["text"].strip()).strip()
-
-                # Skip junk text
-                if len(text) < 5 or text.lower() in seen:
+                if text.lower() in seen:
                     continue
                 seen.add(text.lower())
 
-                size = spans[0]["size"]
-                font = spans[0]["font"]
-                is_bold = "Bold" in font or "bold" in font
+                font_size = float(word.get("size", 0))
+                x0, x1 = word["x0"], word["x1"]
+                page_width = page.width
+                center_x = (x0 + x1) / 2
 
-                # Improved heuristics
-                if size >= 17:
+                # Heuristics for heading level
+                if font_size >= 18 and abs(center_x - page_width / 2) < 100:
                     level = "H1"
-                elif size >= 15 and is_bold:
+                elif font_size >= 16:
                     level = "H2"
-                elif size >= 13:
+                elif font_size >= 14:
                     level = "H3"
                 else:
                     continue
 
-                outline.append({
+                headings.append({
                     "level": level,
                     "text": text,
                     "page": page_num
                 })
 
     return {
-        "title": pdf_path.stem,
-        "outline": outline
+        "title": Path(pdf_path).stem,
+        "outline": headings
     }
 
 
@@ -56,14 +54,16 @@ def process_pdfs():
     output_dir.mkdir(parents=True, exist_ok=True)
 
     for pdf_file in input_dir.glob("*.pdf"):
-        print(f"[INFO] Processing {pdf_file.name}")
         result = extract_headings_from_pdf(pdf_file)
-
         output_file = output_dir / f"{pdf_file.stem}.json"
-        with open(output_file, "w") as f:
-            json.dump(result, f, indent=2)
 
-        print(f"[INFO] Saved to {output_file.name}")
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+
+        print(f"[✓] Processed {pdf_file.name} -> {output_file.name}")
+
 
 if __name__ == "__main__":
+    print("📄 Starting PDF outline extraction...")
     process_pdfs()
+    print("✅ Completed all files.")

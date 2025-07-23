@@ -2,23 +2,13 @@
   "title": "file03",
   "outline": [
     {
-      "level": "H2",
+      "level": "H3",
       "text": "Ontario\u2019s Libraries",
       "page": 1
     },
     {
-      "level": "H2",
+      "level": "H3",
       "text": "Working Together",
-      "page": 1
-    },
-    {
-      "level": "H1",
-      "text": "RFP: R",
-      "page": 1
-    },
-    {
-      "level": "H1",
-      "text": "RFP: R",
       "page": 1
     },
     {
@@ -38,37 +28,12 @@
     },
     {
       "level": "H1",
-      "text": "quest f",
-      "page": 1
-    },
-    {
-      "level": "H1",
       "text": "quest foooor Pr",
       "page": 1
     },
     {
       "level": "H1",
-      "text": "r Pr",
-      "page": 1
-    },
-    {
-      "level": "H1",
-      "text": "r Pr",
-      "page": 1
-    },
-    {
-      "level": "H1",
       "text": "r Proposal",
-      "page": 1
-    },
-    {
-      "level": "H1",
-      "text": "oposal",
-      "page": 1
-    },
-    {
-      "level": "H1",
-      "text": "oposal",
       "page": 1
     },
     {
@@ -102,12 +67,12 @@
       "page": 2
     },
     {
-      "level": "H2",
+      "level": "H3",
       "text": "A Critical Component for Implementing Ontario\u2019s Road Map to",
       "page": 2
     },
     {
-      "level": "H2",
+      "level": "H3",
       "text": "Prosperity Strategy",
       "page": 2
     }
