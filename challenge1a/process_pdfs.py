@@ -3,30 +3,37 @@ import json
 from pathlib import Path
 
 def extract_headings_from_pdf(pdf_path):
+    import fitz
     doc = fitz.open(pdf_path)
     outline = []
+    seen = set()
 
     for page_num, page in enumerate(doc, start=1):
         blocks = page.get_text("dict")["blocks"]
+
         for block in blocks:
             for line in block.get("lines", []):
-                spans = line["spans"]
+                spans = line.get("spans", [])
                 if not spans:
                     continue
 
-                text = " ".join(span["text"] for span in spans).strip()
-                if not text or len(text) < 4:
+                text = " ".join(span["text"].strip() for span in spans if span["text"].strip()).strip()
+
+                # Skip junk text
+                if len(text) < 5 or text.lower() in seen:
                     continue
+                seen.add(text.lower())
 
                 size = spans[0]["size"]
                 font = spans[0]["font"]
+                is_bold = "Bold" in font or "bold" in font
 
-                # Use font size to heuristically determine level
-                if size > 16:
+                # Improved heuristics
+                if size >= 17:
                     level = "H1"
-                elif size > 14:
+                elif size >= 15 and is_bold:
                     level = "H2"
-                elif size > 12:
+                elif size >= 13:
                     level = "H3"
                 else:
                     continue
@@ -37,11 +44,11 @@ def extract_headings_from_pdf(pdf_path):
                     "page": page_num
                 })
 
-    title = pdf_path.stem
     return {
-        "title": title,
+        "title": pdf_path.stem,
         "outline": outline
     }
+
 
 def process_pdfs():
     input_dir = Path("/app/input")
