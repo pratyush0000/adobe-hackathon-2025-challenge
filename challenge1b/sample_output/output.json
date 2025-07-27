@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Understanding.pdf"
+    ],
+    "persona": {
+      "role": "PhD Researcher in Computational Biology",
+      "focus_areas": [
+        "Graph Neural Networks",
+        "Drug Discovery"
+      ]
+    },
+    "job_to_be_done": {
+      "job": "Prepare a comprehensive literature review focusing on methodologies, datasets, and performance benchmarks"
+    },
+    "processing_timestamp": "2025-07-27T17:40:03.987650Z"
+  },
+  "extracted_sections": [
+    {
+      "level": "Title",
+      "text": "Understanding",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Understanding",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Introduction",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Introduction",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Artificial",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Artificial",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Intelligence",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Intelligence",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "(AI)",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "(AI)",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "transforming",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "transforming",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "industries.",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "industries.",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "What",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "What",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "AI?",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "AI?",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "refers",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "refers",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "machines",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "machines",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "that",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "that",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "can",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "can",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "perform",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "perform",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "tasks",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "tasks",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "that",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "that",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "typically",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "typically",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "require",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "require",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "human",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "human",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "intelligence.",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "intelligence.",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "History",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "History",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "The",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "The",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "history",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "history",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "dates",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "dates",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "back",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "back",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "the",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "the",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "1950s.",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "1950s.",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Applications",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Applications",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "used",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "used",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "healthcare,",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "healthcare,",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "finance,",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "finance,",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "and",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "and",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "transportation.",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "transportation.",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Machine",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Machine",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Learning",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Learning",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Machine",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Machine",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "learning",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "learning",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "subset",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "subset",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "AI.",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "AI.",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Supervised",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Supervised",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Learning",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Learning",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Supervised",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Supervised",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "learning",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "learning",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "uses",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "uses",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "labeled",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "labeled",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "data.",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "data.",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Unsupervised",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Unsupervised",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Learning",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Learning",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "Unsupervised",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "Unsupervised",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "learning",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "learning",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "finds",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "finds",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "patterns",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "patterns",
+      "document": "Understanding.pdf"
+    },
+    {
+      "level": "Title",
+      "text": "data.",
+      "page": 1,
+      "importance_rank": 1,
+      "refined_text": "data.",
+      "document": "Understanding.pdf"
+    }
+  ]
+}
