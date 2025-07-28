@@ -3,6 +3,8 @@
 ## Overview
 This repository contains solutions for **Challenge 1a and Challenge 1b** of the Adobe India Hackathon 2025. Both challenges require implementing PDF processing solutions that extract structured data from PDF documents and output JSON files. The solutions must be containerized using Docker and meet specific performance and resource constraints.
 
+
+
 ---
 
 # Challenge 1a: PDF to JSON Processing
